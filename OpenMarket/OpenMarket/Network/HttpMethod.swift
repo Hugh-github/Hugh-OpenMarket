@@ -2,7 +2,11 @@
 //  HttpMethod.swift
 //  OpenMarket
 //
-//  Created by dhoney96 on 2022/11/23.
+//  Created by dhoney96 on 2022/12/15.
 //
 
-import Foundation
+enum HttpMethod: String {
+    case get = "GET"
+    case post = "POST"
+    case delete = "DELETE"
+}
