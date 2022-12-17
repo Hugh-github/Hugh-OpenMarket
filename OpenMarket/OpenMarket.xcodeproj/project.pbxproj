@@ -10,6 +10,8 @@
 		7273C60A2930B86A005DB767 /* ItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7273C6092930B86A005DB767 /* ItemDTO.swift */; };
 		72747A95294AF41400AE347A /* GetEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72747A94294AF41400AE347A /* GetEndPoint.swift */; };
 		72747A97294B000C00AE347A /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72747A96294B000C00AE347A /* Query.swift */; };
+		729CF4EB294DA4DE002295F2 /* BodyParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729CF4EA294DA4DE002295F2 /* BodyParams.swift */; };
+		729CF4ED294DA62B002295F2 /* PostEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729CF4EC294DA62B002295F2 /* PostEndPoint.swift */; };
 		72CB34A6292DF055006E5827 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A5292DF055006E5827 /* HttpMethod.swift */; };
 		72CB34A8292E13D8006E5827 /* ItemListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A7292E13D8006E5827 /* ItemListDTO.swift */; };
 		72CB34AA292E2E25006E5827 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A9292E2E25006E5827 /* EndPoint.swift */; };
@@ -25,6 +27,8 @@
 		7273C6092930B86A005DB767 /* ItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDTO.swift; sourceTree = "<group>"; };
 		72747A94294AF41400AE347A /* GetEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEndPoint.swift; sourceTree = "<group>"; };
 		72747A96294B000C00AE347A /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		729CF4EA294DA4DE002295F2 /* BodyParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyParams.swift; sourceTree = "<group>"; };
+		729CF4EC294DA62B002295F2 /* PostEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEndPoint.swift; sourceTree = "<group>"; };
 		72CB34A5292DF055006E5827 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		72CB34A7292E13D8006E5827 /* ItemListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDTO.swift; sourceTree = "<group>"; };
 		72CB34A9292E2E25006E5827 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -63,6 +67,7 @@
 			children = (
 				72CB34A9292E2E25006E5827 /* EndPoint.swift */,
 				72747A94294AF41400AE347A /* GetEndPoint.swift */,
+				729CF4EC294DA62B002295F2 /* PostEndPoint.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -72,6 +77,7 @@
 			children = (
 				72CB34A5292DF055006E5827 /* HttpMethod.swift */,
 				72747A96294B000C00AE347A /* Query.swift */,
+				729CF4EA294DA4DE002295F2 /* BodyParams.swift */,
 				72747A98294B001D00AE347A /* EndPoint */,
 			);
 			path = Network;
@@ -187,6 +193,8 @@
 				72E2B0DA2929F0C20085055B /* ViewController.swift in Sources */,
 				7273C60A2930B86A005DB767 /* ItemDTO.swift in Sources */,
 				72747A95294AF41400AE347A /* GetEndPoint.swift in Sources */,
+				729CF4EB294DA4DE002295F2 /* BodyParams.swift in Sources */,
+				729CF4ED294DA62B002295F2 /* PostEndPoint.swift in Sources */,
 				72E2B0D62929F0C20085055B /* AppDelegate.swift in Sources */,
 				72E2B0D82929F0C20085055B /* SceneDelegate.swift in Sources */,
 			);

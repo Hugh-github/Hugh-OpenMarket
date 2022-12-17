@@ -9,13 +9,7 @@ protocol EndPoint {
     var baseURL: String { get }
     var path: String { get }
     var method: HttpMethod { get }
-    var queryParameter: [Query: Int]? { get }
-    
-    func makeFullPath() -> String
-}
-
-extension EndPoint {
-    func makeFullPath() -> String {
-        return self.baseURL + self.path
-    }
+    var queryParameter: [Query: Int]? { get } // get 에서만 필요
+    var bodyParameter: [BodyParams: BodyItem]? { get } // post, fetch 에서 필요
+    var header: String? { get } // post, fetch, delete 에서 필요
 }

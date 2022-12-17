@@ -1,11 +1,11 @@
 //
-//  GetEndPoint.swift
+//  PostEndPoint.swift
 //  OpenMarket
 //
-//  Created by dhoney96 on 2022/12/15.
+//  Created by dhoney96 on 2022/12/17.
 //
 
-class GetEndPoint: EndPoint {
+class PostEndPoint: EndPoint {
     var baseURL: String
     var path: String
     var queryParameter: [Query : Int]?
