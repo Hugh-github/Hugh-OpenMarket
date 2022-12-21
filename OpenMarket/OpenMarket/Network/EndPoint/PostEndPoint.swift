@@ -7,18 +7,18 @@
 
 class PostEndPoint: EndPoint {
     var baseURL: String
-    var path: String
-    var queryParameter: [Query : Int]?
+    var path: Path
+    var queryParameter: Query?
     var method: HttpMethod {
-        return .get
+        return .post
     }
     var bodyParameter: [BodyParams : BodyItem]?
     var header: String?
     
     init(
         baseURL: String = "https://openmarket.yagom-academy.kr",
-        path: String = "/api/products",
-        queryParameter: [Query: Int]? = nil,
+        path: Path = .defaultPath,
+        queryParameter: Query? = nil,
         bodyParameter: [BodyParams: BodyItem]? = nil,
         header: String? = nil
     ) {
@@ -27,5 +27,9 @@ class PostEndPoint: EndPoint {
         self.queryParameter = queryParameter
         self.bodyParameter = bodyParameter
         self.header = header
+    }
+    
+    func addQuery() -> URL {
+        <#code#>
     }
 }
