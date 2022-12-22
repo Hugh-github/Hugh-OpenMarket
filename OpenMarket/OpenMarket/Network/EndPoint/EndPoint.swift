@@ -1,5 +1,5 @@
 //
-//  EndPoint.swift
+//  GetEndPoint.swift
 //  OpenMarket
 //
 //  Created by dhoney96 on 2022/12/15.
@@ -7,36 +7,27 @@
 
 import Foundation
 
-protocol EndPoint {
-    var baseURL: String { get }
-    var path: Path { get }
-    var method: HttpMethod { get }
-    var queryParameter: Query? { get }
-    var bodyParameter: [BodyParams: BodyItem]? { get } // post, fetch 에서 필요
-    var header: String? { get } // post, fetch, delete 에서 필요
+class EndPoint: APIRequest {
+    var baseURL: String
+    var path: Path
+    var queryParameter: Query?
+    var method: HttpMethod
+    var bodyParameter: [BodyParams : BodyItem]?
+    var header: String?
     
-    func addQuery() -> URL
-}
-
-// EndPoint에서 해야 하는 작업들
-// request를 만들어야 한다. ( 모든 EndPoint에서 가지고 있어야 하는 메서드이다.)
-
-extension EndPoint {
-    private func makeURL() -> URL {
-        switch self.method {
-        case .get:
-            return self.addQuery()
-        case .post:
-            return self.addQuery()
-        case .delete:
-            return self.addQuery()
-        }
-    }
-    
-    func getURLRequest() -> URLRequest {
-        var request = URLRequest(url: self.makeURL())
-        request.httpMethod = self.method.rawValue
-        
-        return request
+    init(
+        baseURL: String = "https://openmarket.yagom-academy.kr",
+        path: Path = .defaultPath,
+        queryParameter: Query? = nil,
+        method: HttpMethod,
+        bodyParameter: [BodyParams: BodyItem]? = nil,
+        header: String? = nil
+    ) {
+        self.baseURL = baseURL
+        self.path = path
+        self.queryParameter = queryParameter
+        self.method = method
+        self.bodyParameter = bodyParameter
+        self.header = header
     }
 }
