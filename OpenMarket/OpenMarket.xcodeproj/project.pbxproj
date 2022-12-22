@@ -14,6 +14,9 @@
 		72CB34A6292DF055006E5827 /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A5292DF055006E5827 /* HttpMethod.swift */; };
 		72CB34A8292E13D8006E5827 /* ItemListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A7292E13D8006E5827 /* ItemListDTO.swift */; };
 		72CB34AA292E2E25006E5827 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CB34A9292E2E25006E5827 /* APIRequest.swift */; };
+		72D1278329544A8A00A74EF2 /* EndPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1278229544A8A00A74EF2 /* EndPointBuilder.swift */; };
+		72D1278529544AC900A74EF2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1278429544AC900A74EF2 /* NetworkManager.swift */; };
+		72D1278729544B0700A74EF2 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1278629544B0700A74EF2 /* NetworkError.swift */; };
 		72E2B0D62929F0C20085055B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2B0D52929F0C20085055B /* AppDelegate.swift */; };
 		72E2B0D82929F0C20085055B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2B0D72929F0C20085055B /* SceneDelegate.swift */; };
 		72E2B0DA2929F0C20085055B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E2B0D92929F0C20085055B /* ViewController.swift */; };
@@ -31,6 +34,9 @@
 		72CB34A5292DF055006E5827 /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
 		72CB34A7292E13D8006E5827 /* ItemListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListDTO.swift; sourceTree = "<group>"; };
 		72CB34A9292E2E25006E5827 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		72D1278229544A8A00A74EF2 /* EndPointBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointBuilder.swift; sourceTree = "<group>"; };
+		72D1278429544AC900A74EF2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		72D1278629544B0700A74EF2 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		72E2B0D22929F0C20085055B /* OpenMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72E2B0D52929F0C20085055B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72E2B0D72929F0C20085055B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +73,7 @@
 			children = (
 				72CB34A9292E2E25006E5827 /* APIRequest.swift */,
 				72747A94294AF41400AE347A /* EndPoint.swift */,
+				72D1278229544A8A00A74EF2 /* EndPointBuilder.swift */,
 			);
 			path = EndPoint;
 			sourceTree = "<group>";
@@ -74,13 +81,23 @@
 		72CB34A4292DF03C006E5827 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				72D1278429544AC900A74EF2 /* NetworkManager.swift */,
+				72D127812954271A00A74EF2 /* Configuration */,
+				72747A98294B001D00AE347A /* EndPoint */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		72D127812954271A00A74EF2 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
 				72CB34A5292DF055006E5827 /* HttpMethod.swift */,
 				72FE24982953060500FE6396 /* Path.swift */,
 				72747A96294B000C00AE347A /* Query.swift */,
 				729CF4EA294DA4DE002295F2 /* BodyParams.swift */,
-				72747A98294B001D00AE347A /* EndPoint */,
+				72D1278629544B0700A74EF2 /* NetworkError.swift */,
 			);
-			path = Network;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 		72E2B0C92929F0C20085055B = {
@@ -186,8 +203,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72D1278329544A8A00A74EF2 /* EndPointBuilder.swift in Sources */,
+				72D1278729544B0700A74EF2 /* NetworkError.swift in Sources */,
 				72CB34AA292E2E25006E5827 /* APIRequest.swift in Sources */,
 				72747A97294B000C00AE347A /* Query.swift in Sources */,
+				72D1278529544AC900A74EF2 /* NetworkManager.swift in Sources */,
 				72CB34A8292E13D8006E5827 /* ItemListDTO.swift in Sources */,
 				72CB34A6292DF055006E5827 /* HttpMethod.swift in Sources */,
 				72E2B0DA2929F0C20085055B /* ViewController.swift in Sources */,

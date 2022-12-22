@@ -5,8 +5,6 @@
 //  Created by dhoney96 on 2022/12/15.
 //
 
-import Foundation
-
 class EndPoint: APIRequest {
     var baseURL: String
     var path: Path
